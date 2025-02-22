@@ -1,0 +1,13 @@
+pandas==2.2.3
+numpy==1.26.4
+seaborn==0.13.2
+matplotlib==3.10.0
+elevenlabs==1.51.0
+openai==1.63.2
+langchain==0.3.19
+dask==2025.2.0
+nltk==3.9.1
+spacy==3.8.4
+ipykernel==6.29.5
+notebook==7.3.2
+jupyterlab-indent-guides==0.1.0
