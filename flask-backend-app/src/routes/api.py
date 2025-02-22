@@ -5,14 +5,23 @@ from elevenlabs.client import ElevenLabs
 from elevenlabs import play
 import hashlib
 
+from core import Core
+
+CORE = Core()
+
 api_bp = Blueprint('api', __name__)
+
+@api_bp.route('/start-story', methods=['POST'])
+def start_story():
+    response = CORE.start_conversation()
+    return jsonify({'text': response[1]["content"]}), 200
 
 @api_bp.route('/generate-story', methods=['POST'])
 def generate_story():
     data = request.json
     text = data.get('text')
-    print(text)
-    return jsonify({'text': text}), 200
+    response = CORE.get_assistant_response([{"role": "user", "content": text}])
+    return jsonify({'text': response["content"]}), 200
 
 @api_bp.route('/tts', methods=['POST'])
 def generate_audio():
