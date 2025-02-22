@@ -9,7 +9,10 @@ api_bp = Blueprint('api', __name__)
 
 @api_bp.route('/generate-story', methods=['POST'])
 def generate_story():
-    pass
+    data = request.json
+    text = data.get('text')
+    print(text)
+    return jsonify({'text': text}), 200
 
 @api_bp.route('/tts', methods=['POST'])
 def generate_audio():
