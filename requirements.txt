@@ -11,3 +11,4 @@ spacy==3.8.4
 ipykernel==6.29.5
 notebook==7.3.2
 jupyterlab-indent-guides==0.1.0
+beautifulsoup4

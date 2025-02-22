@@ -1,0 +1,4 @@
+{
+    "data_clean": "./data/clean",
+    "data_raw": "./data/raw"
+}
