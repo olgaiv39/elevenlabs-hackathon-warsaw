@@ -1,9 +1,12 @@
 import os
 import logging
-from mistral import Mistral
+from dotenv import load_dotenv
+from mistralai import Mistral
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
+
+load_dotenv()
 
 MISTRAL_API_KEY = os.environ["MISTRAL_API_KEY"]
 NARRATOR_API_ID = os.environ["NARRATOR_API_ID"]
