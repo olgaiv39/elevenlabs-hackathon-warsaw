@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><style>
+#pg-header div, #pg-footer div {
+    all: initial;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+#pg-footer div.agate {
+    font-size: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+#pg-footer li {
+    all: initial;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-indent: -0.6em;
+}
+#pg-footer div.secthead {
+    font-size: 110%;
+    font-weight: bold;
+}
+#pg-footer #project-gutenberg-license {
+    font-size: 110%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+#pg-header-heading {
+    all: inherit;
+    text-align: center;
+    font-size: 120%;
+    font-weight:bold;
+}
+#pg-footer-heading {
+    all: inherit;
+    text-align: center;
+    font-size: 120%;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#pg-header #pg-machine-header p {
+    text-indent: -4em;
+    margin-left: 4em;
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-size: medium
+}
+#pg-header #pg-header-authlist {
+    all: initial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#pg-header #pg-machine-header strong {
+    font-weight: normal;
+}
+#pg-header #pg-start-separator, #pg-footer #pg-end-separator {
+    margin-bottom: 3em;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 2em;
+    text-align: center
+}
+.xhtml_big {font-size: larger;} 
+    .xhtml_center {text-align: center; display: block;}
+    .xhtml_center table {
+        display: table;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        }</style><title>
+      The Project Gutenberg eBook of The Raven, by Edgar Allan Poe.
+    </title>
+<style>p {
+    margin-top: 0.75em;
+    text-align: justify;
+    margin-bottom: 0.75em
+    }
+a:link {
+    font-weight: normal;
+    text-decoration: none
+    }
+a:visited {
+    text-decoration: none
+    }
+a:hover {
+    color: black;
+    text-decoration: none
+    }
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    clear: both
+    }
+hr {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both
+    }
+table {
+    margin-left: auto;
+    margin-right: auto
+    }
+@media screen {
+    body {
+        margin-left: 10%;
+        margin-right: 10%
+        }
+    }
+.pagedjs_page_content > div {
+    margin-left: 10%;
+    margin-right: 10%
+    }
+.pagenum {
+    position: absolute;
+    left: 92%;
+    font-size: smaller;
+    text-align: right;
+    color: gray
+    }
+.linenum {
+    position: absolute;
+    top: auto;
+    left: 4%
+    }
+.blockquot {
+    margin-left: 5%;
+    margin-right: 10%;
+    font-size: smaller
+    }
+.sidenote {
+    width: 20%;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 1em;
+    float: right;
+    clear: right;
+    margin-top: 1em;
+    font-size: smaller;
+    color: black;
+    background: #eee;
+    border: dashed 1px
+    }
+.bb {
+    border-bottom: solid 2px
+    }
+.bl {
+    border-left: solid 2px
+    }
+.bt {
+    border-top: solid 2px
+    }
+.br {
+    border-right: solid 2px
+    }
+.bbox {
+    border: solid 1px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em
+    }
+.center {
+    text-align: center
+    }
+.right {
+    text-align: right
+    }
+.smcap {
+    font-variant: small-caps
+    }
+.u {
+    text-decoration: underline
+    }
+img {
+    border: none
+    }
+.hang {
+    text-indent: -3em;
+    margin-left: 3em
+    }
+.narrow {
+    margin-left: 20%;
+    margin-right: 20%
+    }
+.tnote {
+    font-size: 90%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-top: thin dotted;
+    border-bottom: thin dotted;
+    border-left: thin dotted;
+    border-right: thin dotted;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em
+    }
+.caption {
+    font-weight: bold;
+    font-size: smaller
+    }
+.figcenter {
+    margin: auto;
+    text-align: center
+    }
+.figleft {
+    float: left;
+    clear: left;
+    margin-left: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 0;
+    text-align: center
+    }
+.figright {
+    float: right;
+    clear: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: 0;
+    padding: 0;
+    text-align: center
+    }
+.footnotes {
+    border: dashed 1px
+    }
+.footnote {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.9em
+    }
+.footnote .label {
+    position: absolute;
+    right: 84%;
+    text-align: right
+    }
+.fnanchor {
+    vertical-align: super;
+    font-size: 0.8em;
+    text-decoration: none
+    }
+.indent {
+    display: block;
+    margin-left: 3em
+    }
+.poem {
+    margin-left: 25%;
+    text-indent: 0%
+    }
+.poem .stanza {
+    margin-top: 1em;
+    margin-bottom: 1em
+    }
+.poem br {
+    display: none
+    }
+.poem span.i0 {
+    display: block;
+    margin-left: 0;
+    padding-left: 3em;
+    text-indent: -3em
+    }
+.poem span.i2 {
+    display: block;
+    margin-left: 2em;
+    padding-left: 3em;
+    text-indent: -3em
+    }
+.poem span.i4 {
+    display: block;
+    margin-left: 4em;
+    padding-left: 3em;
+    text-indent: -3em
+    }
+.poem span.i1 {
+    display: block;
+    margin-left: 1em;
+    padding-left: 3em;
+    text-indent: -3em
+    }
+.poem span.i3 {
+    display: block;
+    margin-left: 3em;
+    padding-left: 3em;
+    text-indent: -3em
+    }
+.poem span.i10 {
+    display: block;
+    margin-left: 10em;
+    padding-left: 3em;
+    text-indent: -3em
+    }</style>
+<link rel="icon" href="images/cover-th.jpg" type="image/x-cover" id="id-8006229196626492708"><link rel="schema.dc" href="http://purl.org/dc/elements/1.1/">
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+<meta name="dc.title" content="The Raven">
+<meta name="dc.language" content="en">
+<meta name="dcterms.source" content="https://www.gutenberg.org/files/17192/17192-h/17192-h.htm">
+<meta name="dcterms.modified" content="2025-02-07T16:00:17.293676+00:00">
+<meta name="dc.rights" content="Public domain in the USA.">
+<link rel="dcterms.isFormatOf" href="http://www.gutenberg.org/ebooks/17192">
+<meta name="dc.creator" content="Poe, Edgar Allan, 1809-1849">
+<meta name="marcrel.cmm" content="Stedman, Edmund Clarence, 1833-1908">
+<meta name="marcrel.ill" content="Doré, Gustave, 1832-1883">
+<meta name="dc.subject" content="Ravens -- Poetry">
+<meta name="dc.subject" content="Fantasy poetry, American">
+<meta name="dcterms.created" content="2005-11-30">
+<meta name="generator" content="Ebookmaker 0.13.4 by Project Gutenberg">
+<meta property="og:title" content="The Raven">
+<meta property="og:type" content="Text">
+<meta property="og:url" content="https://www.gutenberg.org/cache/epub/17192/pg17192-images.html">
+<meta property="og:image" content="https://www.gutenberg.org/cache/epub/17192/pg17192.cover.medium.jpg">
+</head>
+<body><section class="pg-boilerplate pgheader" id="pg-header" lang="en"><h2 id="pg-header-heading" title="">The Project Gutenberg eBook of <span lang="en" id="pg-title-no-subtitle">The Raven</span></h2>
+    
+<div>This ebook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this ebook or online
+at <a class="reference external" href="https://www.gutenberg.org">www.gutenberg.org</a>. If you are not located in the United States,
+you will have to check the laws of the country where you are located
+before using this eBook.</div>
+
+<div class="container" id="pg-machine-header"><p><strong>Title</strong>: The Raven</p>
+<div id="pg-header-authlist">
+<p><strong>Author</strong>: Edgar Allan Poe</p>
+
+<p><strong>Commentator</strong>: Edmund Clarence Stedman</p>
+
+<p><strong>Illustrator</strong>: Gustave Doré</p>
+</div>
+<p><strong>Release date</strong>: November 30, 2005 [eBook #17192]<br>
+                Most recently updated: December 13, 2020</p>
+
+<p><strong>Language</strong>: English</p>
+
+<p><strong>Credits</strong>: Produced by Jason Isbell, Melissa Er-Raqabi and the Online<br>
+        Distributed Proofreading Team at https://www.pgdp.net.</p>
+
+</div><div id="pg-start-separator">
+<span>*** START OF THE PROJECT GUTENBERG EBOOK THE RAVEN ***</span>
+</div></section><pre></pre>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Cover Images">
+<tbody><tr>
+<td style="text-align: center;">
+<a href="images/cover.jpg" id="id-4350631491223486902">
+<img alt="Front Cover" height="295" src="images/cover-th.jpg" title="Front Cover" width="235" id="img_images_cover-th.jpg"></a>
+</td>
+<td style="text-align: center;">
+    
+</td>
+<td style="text-align: center;">
+<a href="images/back.jpg" id="id-5538359653996126418">
+<img alt="Back Cover" height="297" src="images/back-th.jpg" title="Back Cover" width="235" id="img_images_back-th.jpg"></a>
+</td></tr>
+</tbody></table></div>
+<hr style="width: 45%;">
+<h1>THE RAVEN</h1>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Author and Illustrator">
+<tbody><tr><td style="text-align: center;"><span class="smcap">By</span><br><h2>EDGAR ALLAN POE</h2></td>
+<td style="text-align: center;">        </td>
+<td style="text-align: center;">ILLUSTRATED<br><h2><span class="smcap">By</span> GUSTAVE DORÉ</h2></td></tr>
+</tbody></table></div>
+<div class="figcenter" style="width: 664px;">
+<a id="title"></a>
+<img alt="Title Image" height="600" src="images/title.jpg" title="Title Image" width="664" id="img_images_title.jpg">
+</div>
+<p class="center"><span class="xhtml_big">WITH COMMENT BY EDMUND C. STEDMAN</span></p>
+<p class="center">NEW YORK</p>
+<p class="center"><small>HARPER &amp; BROTHERS, PUBLISHERS, FRANKLIN SQUARE</small><br>
+<small>1884</small>
+</p>
+<p><br><br><br><br><br><br></p>
+<p class="center"><small>Entered according to Act of Congress, in the year 1883, by</small><br>
+<small>HARPER &amp; BROTHERS,</small><br>
+<small>In the Office of the Librarian of Congress, at Washington.</small></p>
+<p class="center"><i><small>All rights reserved.</small></i>
+</p>
+<p><br><br><br><br><br><br></p>
+<div class="tnote">
+<h3>Transcriber's Notes</h3>
+<p>In the List of Illustrations I restored a missing single quote after <i>Lenore!</i> as shown below:</p>
+<p class="indent">"'Wretch,' I cried, 'thy God hath lent thee—by these angels he hath sent thee<br>
+Respite—respite and nepenthe from thy memories of Lenore!'"</p>
+<p>The List of Illustrations uses 'visitor' where the poem and the actual illustration use 'visiter'.</p>
+</div>
+<p><br><br><br><br><br><br></p>
+<h2>LIST OF ILLUSTRATIONS</h2>
+<p><span class="pagenum"><a id="Page_5">[5]</a></span></p>
+<h3> <span class="smcap">With Names of Engravers</span></h3>
+<div class="center">
+<table style="border-spacing: 0px;padding: 6px;border-width: 0px;" data-summary="List of Illustrations">
+<tbody><tr><td style="text-align: left;"><a href="#title" class="pginternal">Title-page, designed by Elihu Vedder.</a></td><td style="text-align: right;"><i>Frederick Juengling.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration1" class="pginternal">"Nevermore."</a></td><td style="text-align: right;"><i>H. Claudius, G.J. Buechner.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration2" class="pginternal">ANANKE.</a></td><td style="text-align: right;"><i>H. Claudius.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration3" class="pginternal">"Once upon a midnight dreary, while I pondered, weak and weary, <br>Over many a quaint and curious volume of forgotten lore."</a></td><td style="text-align: right;"><i>R.A. Muller.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration4" class="pginternal">"Ah, distinctly I remember, it was in the bleak December, <br>And each separate dying ember wrought its ghost upon the floor."</a></td><td style="text-align: right;"><i>R.G. Tietze.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration5" class="pginternal">"Eagerly I wished the morrow; vainly I had sought to borrow <br>From my books surcease of sorrow—sorrow for the lost Lenore."</a></td><td style="text-align: right;"><i>H. Claudius.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration6" class="pginternal">"Sorrow for the lost Lenore."</a></td><td style="text-align: right;"><i>W. Zimmermann.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration7" class="pginternal">"For the rare and radiant maiden whom the angels name Lenore— <br><span class="indent">Nameless here for evermore."</span></a></td><td style="text-align: right;"><i>Frederick Juengling.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration8" class="pginternal">"''T is some visitor entreating entrance at my chamber door— <br>Some late visitor entreating entrance at my chamber door.'"</a></td><td style="text-align: right;"><i>W. Zimmermann.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration9" class="pginternal"><span class="indent">—"Here I opened wide the door;—</span>Darkness there, and nothing more."</a></td><td style="text-align: right;"><i>H. Claudius.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration10" class="pginternal">"Doubting, dreaming dreams no mortal ever dared to dream before."</a></td><td style="text-align: right;"><i>F.S. King.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration11" class="pginternal">"'Surely,' said I, 'surely that is something at my window lattice; <br>Let me see, then, what thereat is, and this mystery explore.'"</a></td><td style="text-align: right;"><i>Frederick Juengling.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration12" class="pginternal">"Open here I flung the shutter."</a></td><td style="text-align: right;"><i>T. Johnson.</i></td></tr>
+<tr><td style="text-align: left;"><span class="pagenum"><a id="Page_6">[6]</a></span></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration13" class="pginternal"><span class="indent">—"A stately Raven of the saintly days of yore.</span>Not the least obeisance made he; not a minute stopped or stayed he."</a></td><td style="text-align: right;"><i>R. Staudenbaur.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration14" class="pginternal">"Perched upon a bust of Pallas just above my chamber door— <br><span class="indent">Perched, and sat, and nothing more."</span></a></td><td style="text-align: right;"><i>R.G. Tietze.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration15" class="pginternal">"Wandering from the Nightly shore."</a></td><td style="text-align: right;"><i>Frederick Juengling.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration16" class="pginternal">"Till I scarcely more than muttered, 'Other friends have flown before— <br>On the morrow <i>he</i> will leave me, as my hopes have flown before.'"</a></td><td style="text-align: right;"><i>Frank French.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration17" class="pginternal">"Then, upon the velvet sinking, I betook myself to linking <br>Fancy unto fancy."</a></td><td style="text-align: right;"><i>R. Schelling.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration18" class="pginternal">"But whose velvet violet lining with the lamplight gloating o'er <br><span class="indent"><i>She</i> shall press, ah, nevermore!"</span></a></td><td style="text-align: right;"><i>George Kruell.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration19" class="pginternal">"'Wretch,' I cried, 'thy God hath lent thee—by these angels he hath sent thee <br>Respite—respite and nepenthe from thy memories of Lenore!'"</a></td><td style="text-align: right;"><i>Victor Bernstrom.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration20" class="pginternal">"On this home by Horror haunted."</a></td><td style="text-align: right;"><i>R. Staudenbaur.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration21" class="pginternal"><span class="indent">"'Tell me truly, I implore—</span>Is there—<i>is</i> there balm in Gilead?—tell me—tell me, I implore!'"</a></td><td style="text-align: right;"><i>W. Zimmermann.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration22" class="pginternal">"'Tell this soul with sorrow laden if, within the distant Aidenn, <br>It shall clasp a sainted maiden whom the angels name Lenore.'"</a></td><td style="text-align: right;"><i>F.S. King.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration23" class="pginternal">"'Be that word our sign of parting, bird or fiend!' I shrieked, upstarting."</a></td><td style="text-align: right;"><i>W. Zimmermann.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration24" class="pginternal">"'Get thee back into the tempest and the Night's Plutonian shore!'"</a></td><td style="text-align: right;"><i>Robert Hoskin.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration25" class="pginternal">"And my soul from out that shadow that lies floating on the floor <br><span class="indent">Shall be lifted—nevermore!"</span></a></td><td style="text-align: right;"><i>R.G. Tietze.</i></td></tr>
+<tr><td style="text-align: left;"><a href="#Illustration26" class="pginternal">The secret of the Sphinx.</a></td><td style="text-align: right;"><i>R. Staudenbaur.</i></td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_7">[7]</a></span><br></p>
+<p><span class="pagenum"><a id="Page_8">[8]</a></span><br></p>
+<p><span class="pagenum"><a id="Page_9">[9]</a></span></p>
+<h2><a id="COMMENT_ON_THE_POEM"></a>COMMENT ON THE POEM.</h2>
+<p>The secret of a poem, no less than a jest's
+prosperity, lies in the ear of him that hears
+it. Yield to its spell, accept the poet's
+mood: this, after all, is what the sages answer
+when you ask them of its value. Even though
+the poet himself, in his other mood, tell you that
+his art is but sleight of hand, his food enchanter's
+food, and offer to show you the trick of it,—believe
+him not. Wait for his prophetic hour; then give
+yourself to his passion, his joy or pain. "We are
+in Love's hand to-day!" sings Gautier, in Swinburne's
+buoyant paraphrase,—and from morn to
+sunset we are wafted on the violent sea: there is
+but one love, one May, one flowery strand. Love
+is eternal, all else unreal and put aside. The vision
+has an end, the scene changes; but we have gained
+something, the memory of a charm. As many poets,
+so many charms. There is the charm of Evanescence,
+that which lends to supreme beauty and
+grace an aureole of Pathos. Share with Landor
+his one "night of memories and of sighs" for Rose
+Aylmer, and you have this to the full.</p>
+<p>And now take the hand of a new-world minstrel,
+strayed from some proper habitat to that rude
+and dissonant America which, as Baudelaire saw,
+"was for Poe only a vast prison through which he
+ran, hither and thither, with the feverish agitation of
+a being created to breathe in a purer world," and
+where "his interior life, spiritual as a poet, spiritual
+even as a drunkard, was but one perpetual effort to
+escape the influence of this antipathetical atmosphere."
+Clasp the sensitive hand of a troubled
+singer dreeing thus his weird, and share with him
+the clime in which he found,—never throughout
+the day, always in the night,—if not the Atlantis
+whence he had wandered, at least a place of refuge
+from the bounds in which by day he was immured.</p>
+<p>To one land only he has power to lead you,
+and for one night only can you share his dream.
+A tract of neither Earth nor Heaven: "No-man's-land,"
+out of Space, out of Time. Here are the
+perturbed ones, through whose eyes, like those of
+the Cenci, the soul finds windows though the mind
+is dazed; here spirits, groping for the path which
+leads to Eternity, are halted and delayed. It is
+the limbo of "planetary souls," wherein are all
+moonlight uncertainties, all lost loves and illusions.
+Here some are fixed in trance, the only respite
+attainable; others</p>
+<div class="poem"><div class="stanza">
+<span class="i1">"move fantastically<br></span>
+<span class="i0">To a discordant melody:"<br></span>
+</div></div>
+<p>while everywhere are</p>
+<div class="poem"><div class="stanza">
+<span class="i0">"Sheeted Memories of the Past—<br></span>
+<span class="i0">Shrouded forms that start and sigh<br></span>
+<span class="i0">As they pass the wanderer by."<br></span>
+</div></div>
+<p>Such is the land, and for one night we enter
+it,—a night of astral phases and recurrent chimes.
+Its monodies are twelve poems, whose music strives
+to change yet ever is the same. One by one they
+sound, like the chiming of the brazen and ebony
+clock, in "The Masque of the Red Death," which
+made the waltzers pause with "disconcert and
+tremulousness and meditation," as often as the hour
+came round.</p>
+<p>Of all these mystical cadences, the plaint of
+<i>The Raven</i>, vibrating through the portal, chiefly
+has impressed the outer world. What things go to
+the making of a poem,—and how true in this, as
+in most else, that race which named its bards "the
+makers"? A work is called out of the void. Where
+there was nothing, it remains,—a new creation, part
+of the treasure of mankind. And a few exceptional
+lyrics, more than others that are equally creative,
+compel us to think anew how bravely the poet's
+pen turns things unknown</p>
+<div class="poem"><div class="stanza">
+<span class="i2">"to shapes, and gives to airy nothing<br></span>
+<span class="i0">A local habitation, and a name."<br></span>
+</div></div>
+<p>Each seems without a prototype, yet all fascinate
+us with elements wrested from the shadow of the
+Supernatural. Now the highest imagination is concerned
+about the soul of things; it may or may not
+inspire the Fantasy that peoples with images the
+interlunar vague. Still, one of these lyrics, in its
+smaller way, affects us with a sense of uniqueness,
+as surely as the sublimer works of a supernatural
+cast,—Marlowe's "Faustus," the "Faust" of Goethe,
+"Manfred," or even those ethereal masterpieces,
+"The Tempest" and "A Midsummer Night's Dream."
+More than one, while otherwise unique, has some<span class="pagenum"><a id="Page_10">[10]</a></span>
+burden or refrain which haunts the memory,—once
+heard, never forgotten, like the tone of a rarely used
+but distinctive organ-stop. Notable among them is
+Bürger's "Lenore," that ghostly and resonant ballad,
+the lure and foil of the translators. Few will
+deny that Coleridge's wondrous "Rime of the Ancient Mariner"
+stands at their very head. "Le
+Juif-Errant" would have claims, had Beranger been
+a greater poet; and, but for their remoteness from
+popular sympathy, "The Lady of Shalott" and
+"The Blessed Damozel" might be added to the
+list. It was given to Edgar Allan Poe to produce
+two lyrics, "The Bells" and <i>The Raven</i>, each of
+which, although perhaps of less beauty than those
+of Tennyson and Rossetti, is a unique. "Ulalume,"
+while equally strange and imaginative, has not the
+universal quality that is a portion of our test.</p>
+<p><i>The Raven</i> in sheer poetical constituents falls
+below such pieces as "The Haunted Palace," "The
+City in the Sea," "The Sleeper," and "Israfel."
+The whole of it would be exchanged, I suspect, by
+readers of a fastidious cast, for such passages as
+these:</p>
+<div class="poem"><div class="stanza">
+<span class="i0">"Around, by lifting winds forgot,<br></span>
+<span class="i0">Resignedly beneath the sky<br></span>
+<span class="i0">The melancholy waters lie.<br></span>
+</div><div class="stanza">
+<span class="i0">No rays from the holy heaven come down<br></span>
+<span class="i0">On the long night-time of that town;<br></span>
+<span class="i0">But light from out the lurid sea<br></span>
+<span class="i0">Streams up the turrets silently—<br></span>
+<span class="i2"><b>·     ·     ·     ·     ·     ·     ·     </b><br></span>
+<span class="i0">Up many and many a marvellous shrine<br></span>
+<span class="i0">Whose wreathéd friezes intertwine<br></span>
+<span class="i0">The viol, the violet, and the vine.<br></span>
+<span class="i2"><b>·     ·     ·     ·     ·     ·     ·     </b><br></span>
+<span class="i0">No swellings tell that winds may be<br></span>
+<span class="i0">Upon some far-off happier sea—<br></span>
+<span class="i0">No heavings hint that winds have been<br></span>
+<span class="i0">On seas less hideously serene."<br></span>
+</div></div>
+<p>It lacks the aerial melody of the poet whose heart-strings
+are a lute:</p>
+<div class="poem"><div class="stanza">
+<span class="i0">"And they say (the starry choir<br></span>
+<span class="i0">And the other listening things)<br></span>
+<span class="i0">That Israfeli's fire<br></span>
+<span class="i0">Is owing to that lyre<br></span>
+<span class="i0">By which he sits and sings—<br></span>
+<span class="i0">The trembling living wire<br></span>
+<span class="i0">Of those unusual strings."<br></span>
+</div></div>
+<p>But <i>The Raven</i>, like "The Bells" and "Annabel
+Lee," commends itself to the many and the few.
+I have said elsewhere that Poe's rarer productions
+seemed to me "those in which there is the appearance,
+at least, of spontaneity,—in which he yields
+to his feelings, while dying falls and cadences most
+musical, most melancholy, come from him unawares."
+This is still my belief; and yet, upon a
+fresh study of this poem, it impresses me more
+than at any time since my boyhood. Close acquaintance
+tells in favor of every true work of art.
+Induce the man, who neither knows art nor cares
+for it, to examine some poem or painting, and how
+soon its force takes hold of him! In fact, he will
+overrate the relative value of the first good work
+by which his attention has been fairly caught. <i>The
+Raven</i>, also, has consistent qualities which even an
+expert must admire. In no other of its author's
+poems is the motive more palpably defined. "The
+Haunted Palace" is just as definite to the select
+reader, but Poe scarcely would have taken that
+subtle allegory for bald analysis. <i>The Raven</i> is
+wholly occupied with the author's typical theme—the
+irretrievable loss of an idolized and beautiful
+woman; but on other grounds, also, the public instinct
+is correct in thinking it his representative poem.</p>
+<p>A man of genius usually gains a footing with
+the success of some one effort, and this is not always
+his greatest. Recognition is the more instant for
+having been postponed. He does not acquire it,
+like a miser's fortune, coin after coin, but "not at
+all or all in all." And thus with other ambitions:
+the courtier, soldier, actor,—whatever their parts,—each
+counts his triumph from some lucky stroke.
+Poe's Raven, despite augury, was for him "the
+bird that made the breeze to blow." The poet
+settled in New-York, in the winter of 1844-'45,
+finding work upon Willis's paper, "The Evening
+Mirror," and eking out his income by contributions
+elsewhere. For six years he had been an active
+writer, and enjoyed a professional reputation; was
+held in both respect and misdoubt, and was at no loss
+for his share of the ill-paid journalism of that day.
+He also had done much of his very best work,—such
+tales as "Ligeia" and "The Fall of the House
+of Usher," (the latter containing that mystical
+counterpart, in verse, of Elihu Vedder's "A Lost Mind,")
+such analytic feats as "The Gold Bug" and "The
+Mystery of Marie Roget." He had made proselytes
+abroad, and gained a lasting hold upon the
+French mind. He had learned his own power and
+weakness, and was at his prime, and not without a
+certain reputation. But he had written nothing that
+was on the tongue of everybody. To rare and delicate
+work some popular touch must be added to
+capture the general audience of one's own time.</p>
+<p>Through the industry of Poe's successive biographers,
+the hit made by <i>The Raven</i> has become
+an oft-told tale. The poet's young wife, Virginia,
+was fading before his eyes, but lingered for another
+year within death's shadow. The long, low chamber
+in the house near the Bloomingdale Road is as<span class="pagenum"><a id="Page_11">[11]</a></span>
+famous as the room where Rouget de l'Isle composed
+the Marseillaise. All have heard that the
+poem, signed "Quarles," appeared in the "American
+Review," with a pseudo-editorial comment on its
+form; that Poe received ten dollars for it; that
+Willis, the kindest and least envious of fashionable
+arbiters, reprinted it with a eulogy that instantly
+made it town-talk. All doubt of its authorship
+was dispelled when Poe recited it himself at a
+literary gathering, and for a time he was the most
+marked of American authors. The hit stimulated
+and encouraged him. Like another and prouder
+satirist, he too found "something of summer" even
+"in the hum of insects." Sorrowfully enough, but
+three years elapsed,—a period of influence, pride,
+anguish, yet always of imaginative or critical labor,—before
+the final defeat, before the curtain dropped
+on a life that for him was in truth a tragedy, and
+he yielded to "the Conqueror Worm."</p>
+<p>"The American Review: A Whig Journal"
+was a creditable magazine for the time, double-columned,
+printed on good paper with clear type,
+and illustrated by mezzotint portraits. Amid much
+matter below the present standard, it contained some
+that any editor would be glad to receive. The
+initial volume, for 1845, has articles by Horace
+Greeley, Donald Mitchell, Walter Whitman, Marsh,
+Tuckerman, and Whipple. Ralph Hoyt's quaint
+poem, "Old," appeared in this volume. And here
+are three lyrics by Poe: "The City in the Sea,"
+"The Valley of Unrest," and <i>The Raven</i>. Two of
+these were built up,—such was his way,—from
+earlier studies, but the last-named came out as if
+freshly composed, and almost as we have it now.
+The statement that it was not afterward revised is
+erroneous. Eleven trifling changes from the magazine-text
+appear in <i>The Raven and Other Poems</i>,
+1845, a book which the poet shortly felt encouraged
+to offer the public. These are mostly changes of
+punctuation, or of single words, the latter kind
+made to heighten the effect of alliteration. In Mr.
+Lang's pretty edition of Poe's verse, brought out
+in the "Parchment Library," he has shown the
+instinct of a scholar, and has done wisely, in going
+back to the text in the volume just mentioned, as
+given in the London issue of 1846. The "standard"
+Griswold collection of the poet's works abounds
+with errors. These have been repeated by later
+editors, who also have made errors of their
+own. But the text of <i>The Raven</i>, owing to the
+requests made to the author for manuscript copies,
+was still farther revised by him; in fact, he printed
+it in Richmond, just before his death, with the
+poetic substitution of "seraphim whose foot-falls"
+for "angels whose faint foot-falls," in the fourteenth
+stanza. Our present text, therefore, while substantially
+that of 1845, is somewhat modified by the
+poet's later reading, and is, I think, the most correct
+and effective version of this single poem. The
+most radical change from the earliest version appeared,
+however, in the volume in 1845; the eleventh
+stanza originally having contained these lines, faulty
+in rhyme and otherwise a blemish on the poem:</p>
+<div class="poem"><div class="stanza">
+<span class="i0">"Caught from some unhappy master, whom unmerciful Disaster<br></span>
+<span class="i0">Followed fast and followed faster—so, when Hope he would adjure,<br></span>
+<span class="i0">Stern Despair returned, instead of the sweet Hope he dared adjure—<br></span>
+<span class="i10">That sad answer, 'Nevermore!'"<br></span>
+</div></div>
+<p>It would be well if other, and famous, poets could
+be as sure of making their changes always improvements.
+Poe constantly rehandled his scanty show
+of verse, and usually bettered it. <i>The Raven</i> was
+the first of the few poems which he nearly brought
+to completion before printing. It may be that those
+who care for poetry lost little by his death. Fluent
+in prose, he never wrote verse for the sake of making
+a poem. When a refrain of image haunted him,
+the lyric that resulted was the inspiration, as he
+himself said, of a passion, not of a purpose. This
+was at intervals so rare as almost to justify the
+Fairfield theory that each was the product of a
+nervous crisis.</p>
+<p>What, then, gave the poet his clue to <i>The
+Raven</i>? From what misty foundation did it rise
+slowly to a music slowly breathed? As usual, more
+than one thing went to the building of so notable
+a poem. Considering the longer sermons often
+preached on brief and less suggestive texts, I hope
+not to be blamed for this discussion of a single
+lyric,—especially one which an artist like Doré has
+made the subject of prodigal illustration. Until recently
+I had supposed that this piece, and a few
+which its author composed after its appearance, were
+exceptional in not having grown from germs in his
+boyish verse. But Mr. Fearing Gill has shown me
+some unpublished stanzas by Poe, written in his
+eighteenth year, and entitled, "The Demon of the
+Fire." The manuscript appears to be in the poet's
+early handwriting, and its genuineness is vouched for
+by the family in whose possession it has remained
+for half a century. Besides the plainest germs of
+"The Bells" and "The Haunted Palace" it contains
+a few lines somewhat suggestive of the opening
+and close of <i>The Raven</i>. As to the rhythm of
+our poem, a comparison of dates indicates that this
+was influenced by the rhythm of "Lady Geraldine's
+Courtship." Poe was one of the first to honor Miss
+Barrett's genius; he inscribed his collected poems
+to her as "the noblest of her sex," and was in<span class="pagenum"><a id="Page_12">[12]</a></span>
+sympathy with her lyrical method. The lines from
+her love-poem,</p>
+<div class="poem"><div class="stanza">
+<span class="i0">"With a murmurous stir uncertain, in the air, the purple curtain<br></span>
+<span class="i0">Swelleth in and swelleth out around her motionless pale brows,"<br></span>
+</div></div>
+<p>found an echo in these:</p>
+<div class="poem"><div class="stanza">
+<span class="i0">"And the silken sad uncertain rustling of each purple curtain<br></span>
+<span class="i0">Thrilled me—filled me with fantastic terrors never felt before."<br></span>
+</div></div>
+<p>Here Poe assumed a privilege for which he roughly
+censured Longfellow, and which no one ever sought
+on his own premises without swift detection and
+chastisement. In melody and stanzaic form, we shall
+see that the two poems are not unlike, but in motive
+they are totally distinct. The generous poetess
+felt nothing but the true originality of the poet.
+"This vivid writing!" she exclaimed,—"this power
+which is felt!... Our great poet, Mr. Browning,
+author of 'Paracelsus,' &amp;c., is enthusiastic in
+his admiration of the rhythm." Mr. Ingram, after
+referring to "Lady Geraldine," cleverly points out
+another source from which Poe may have caught
+an impulse. In 1843, Albert Pike, the half-Greek,
+half-frontiersman, poet of Arkansas, had printed in
+"The New Mirror," for which Poe then was writing,
+some verses entitled "Isadore," but since revised
+by the author and called "The Widowed Heart."
+I select from Mr. Pike's revision the following
+stanza, of which the main features correspond with
+the original version:</p>
+<div class="poem"><div class="stanza">
+<span class="i0">"Restless I pace our lonely rooms, I play our songs no more,<br></span>
+<span class="i0">The garish sun shines flauntingly upon the unswept floor;<br></span>
+<span class="i0">The mocking-bird still sits and sings, O melancholy strain!<br></span>
+<span class="i0">For my heart is like an autumn-cloud that overflows with rain;<br></span>
+<span class="i10">Thou art lost to me forever, Isadore!"<br></span>
+</div></div>
+<p>Here we have a prolonged measure, a similarity of
+refrain, and the introduction of a bird whose song
+enhances sorrow. There are other trails which may
+be followed by the curious; notably, a passage
+which Mr. Ingram selects from Poe's final review
+of "Barnaby Rudge":</p>
+<div class="blockquot"><p>"The raven, too, * * * might have been made, more
+than we now see it, a portion of the conception of the fantastic
+Barnaby. * * * Its character might have performed,
+in regard to that of the idiot, much the same part as does,
+in music, the accompaniment in respect to the air."</p></div>
+<p>Nevertheless, after pointing out these germs
+and resemblances, the value of this poem still is
+found in its originality. The progressive music, the
+scenic detail and contrasted light and shade,—above
+all, the spiritual passion of the nocturn, make it the
+work of an informing genius. As for the gruesome
+bird, he is unlike all the other ravens of his clan, from
+the "twa corbies" and "three ravens" of the balladists
+to Barnaby's rumpled "Grip." Here is no
+semblance of the cawing rook that haunts ancestral
+turrets and treads the field of heraldry; no boding
+phantom of which Tickell sang that, when,</p>
+<div class="poem"><div class="stanza">
+<span class="i4">"shrieking at her window thrice,<br></span>
+<span class="i0">The raven flap'd his wing,<br></span>
+<span class="i0">Too well the love-lorn maiden knew<br></span>
+<span class="i0">The solemn boding sound."<br></span>
+</div></div>
+<p>Poe's raven is a distinct conception; the incarnation
+of a mourner's agony and hopelessness; a sable
+embodied Memory, the abiding chronicler of doom, a
+type of the Irreparable. Escaped across the Styx, from
+"the Night's Plutonian shore," he seems the imaged
+soul of the questioner himself,—of him who can not,
+will not, quaff the kind nepenthe, because the memory
+of Lenore is all that is left him, and with the
+surcease of his sorrow even that would be put aside.</p>
+<p><i>The Raven</i> also may be taken as a representative
+poem of its author, for its exemplification of all
+his notions of what a poem should be. These are
+found in his essays on "The Poetic Principle," "The
+Rationale of Verse," and "The Philosophy of Composition."
+Poe declared that "in Music, perhaps,
+the soul most nearly attains the great end for which,
+when inspired by the Poetic Sentiment, it struggles—the
+creation of supernal Beauty.... Verse
+cannot be better designated than as an inferior or
+less capable music"; but again, verse which is really
+the "Poetry of Words" is "The Rhythmical Creation
+of Beauty,"—this and nothing more. The <i>tone</i>
+of the highest Beauty is one of Sadness. The most
+melancholy of topics is Death. This must be allied
+to Beauty. "The death, then, of a beautiful woman
+is, unquestionably, the most poetical topic in the
+world,—and equally is it beyond doubt that the lips
+best suited for such a topic are those of a bereaved
+lover." These last expressions are quoted from
+Poe's whimsical analysis of this very poem, but
+they indicate precisely the general range of his
+verse. The climax of "The Bells" is the muffled
+monotone of ghouls, who glory in weighing down
+the human heart. "Lenore," <i>The Raven</i>, "The
+Sleeper," "To One in Paradise," and "Ulalume"
+form a tenebrose symphony,—and "Annabel Lee,"
+written last of all, shows that one theme possessed
+him to the end. Again, these are all nothing
+if not musical, and some are touched with that
+quality of the Fantastic which awakes the sense of
+awe, and adds a new fear to agony itself. Through
+all is dimly outlined, beneath a shadowy pall, the
+poet's ideal love,—so often half-portrayed elsewhere,—the
+entombed wife of Usher, the Lady Ligeia, in<span class="pagenum"><a id="Page_13">[13]</a></span>
+truth the counterpart of his own nature. I suppose
+that an artist's love for one "in the form" never
+can wholly rival his devotion to some ideal. The
+woman near him must exercise her spells, be all by
+turns and nothing long, charm him with infinite variety,
+or be content to forego a share of his allegiance.
+He must be lured by the Unattainable,
+and this is ever just beyond him in his passion for
+creative art.</p>
+<p>Poe, like Hawthorne, came in with the decline
+of the Romantic school, and none delighted more
+than he to laugh at its calamity. Yet his heart was
+with the romancers and their Oriental or Gothic
+effects. His invention, so rich in the prose tales,
+seemed to desert him when he wrote verse; and his
+judgment told him that long romantic poems depend
+more upon incident than inspiration,—and that,
+to utter the poetry of romance, lyrics would suffice.
+Hence his theory, clearly fitted to his own limitations,
+that "a 'long poem' is a flat contradiction in
+terms." The components of <i>The Raven</i> are few and
+simple: a man, a bird, and the phantasmal memory
+at a woman. But the piece affords a fine display
+of romantic material. What have we? The midnight;
+the shadowy chamber with its tomes of forgotten
+lore; the student,—a modern Hieronymus;
+the raven's tap on the casement; the wintry night
+and dying fire; the silken wind-swept hangings;
+the dreams and vague mistrust of the echoing darkness;
+the black, uncanny bird upon the pallid bust;
+the accessories of violet velvet and the gloating
+lamp. All this stage effect of situation, light, color,
+sound, is purely romantic, and even melodramatic,
+but of a poetic quality that melodrama rarely exhibits,
+and thoroughly reflective of the poet's "eternal
+passion, eternal pain."</p>
+<p>The rhythmical structure of <i>The Raven</i> was
+sure to make an impression. Rhyme, alliteration,
+the burden, the stanzaic form, were devised with
+singular adroitness. Doubtless the poet was struck
+with the aptness of Miss Barrett's musical trochaics,
+in "eights," and especially by the arrangement
+adopted near the close of "Lady Geraldine":</p>
+<div class="poem"><div class="stanza">
+<span class="i0">"'Eyes,' he said, 'now throbbing through me! Are ye eyes that did undo me?<br></span>
+<span class="i0">Shining eyes, like antique jewels set in Parian statue-stone!<br></span>
+<span class="i0">Underneath that calm white forehead, are ye ever burning torrid<br></span>
+<span class="i0">O'er the desolate sand-desert of my heart and life undone?'"<br></span>
+</div></div>
+<p>His artistic introduction of a third rhyme in both
+the second and fourth lines, and the addition of a
+fifth line and a final refrain, made the stanza of <i>The
+Raven</i>. The persistent alliteration seems to come
+without effort, and often the rhymes within lines
+are seductive; while the refrain or burden dominates
+the whole work. Here also he had profited by Miss
+Barrett's study of ballads and romaunts in her own
+and other tongues. A "refrain" is the lure wherewith
+a poet or a musician holds the wandering ear,—the
+recurrent longing of Nature for the initial
+strain. I have always admired the beautiful refrains
+of the English songstress,—"The Nightingales,
+the Nightingales," "Margret, Margret," "My Heart
+and I," "Toll slowly," "The River floweth on,"
+"Pan, Pan is dead," etc. She also employed what
+I term the Repetend, in the use of which Poe has
+excelled all poets since Coleridge thus revived it:</p>
+<div class="poem"><div class="stanza">
+<span class="i0">"O happy living things! no tongue<br></span>
+<span class="i0">Their beauty might declare:<br></span>
+<span class="i0">A spring of love gushed from my heart,<br></span>
+<span class="i0">And I blessed them unaware:<br></span>
+<span class="i0">Sure my kind saint took pity on me,<br></span>
+<span class="i0">And I blessed them unaware."<br></span>
+</div></div>
+<p>Poe created the fifth line of his stanza for the magic
+of the repetend. He relied upon it to the uttermost
+in a few later poems,—"Lenore," "Annabel Lee,"
+"Ulalume," and "For Annie." It gained a wild and
+melancholy music, I have thought, from the "sweet
+influences," of the Afric burdens and repetends that
+were sung to him in childhood, attuning with their
+native melody the voice of our Southern poet.</p>
+<p>"The Philosophy of Composition," his analysis
+of <i>The Raven</i>, is a technical dissection of its method
+and structure. Neither his avowal of cold-blooded
+artifice, nor his subsequent avowal to friends that an
+exposure of this artifice was only another of his intellectual
+hoaxes, need be wholly credited. If he
+had designed the complete work in advance, he
+scarcely would have made so harsh a prelude of
+rattle-pan rhymes to the delicious melody of the
+second stanza,—not even upon his theory of the
+fantastic. Of course an artist, having perfected a
+work, sees, like the first Artist, that it is good, and
+sees why it is good. A subsequent analysis, coupled
+with a disavowal of any sacred fire, readily enough
+may be made. My belief is that the first conception
+and rough draft of this poem came as inspiration
+always comes; that its author then saw how
+it might be perfected, giving it the final touches
+described in his chapter on Composition, and that
+the latter, therefore, is neither wholly false nor wholly
+true. The harm of such analysis is that it tempts
+a novice to fancy that artificial processes can supersede
+imagination. The impulse of genius is to guard
+the secrets of its creative hour. Glimpses obtained
+of the toil, the baffled experiments, which precede a
+triumph, as in the sketch-work of Hawthorne recently
+brought to light, afford priceless instruction
+and encouragement to the sincere artist. But one<span class="pagenum"><a id="Page_14">[14]</a></span>
+who voluntarily exposes his Muse to the gaze of
+all comers should recall the fate of King Candaules.</p>
+<p>The world still thinks of Poe as a "luckless
+man of genius." I recently heard him mentioned as
+"one whom everybody seems chartered to misrepresent,
+decry or slander." But it seems to me that
+his ill-luck ended with his pitiable death, and that
+since then his defence has been persistent, and his
+fame of as steadfast growth as a suffering and gifted
+author could pray for in his hopeful hour. Griswold's
+decrial and slander turned the current in his
+favor. Critics and biographers have come forward
+with successive refutations, with tributes to his
+character, with new editions of his works. His own
+letters and the minute incidents of his career are
+before us; the record, good and bad, is widely
+known. No appellor has received more tender and
+forgiving judgement. His mishaps in life belonged
+to his region and period, perchance still more to his
+own infirmity of will. Doubtless his environment
+was not one to guard a fine-grained, ill-balanced
+nature from perils without and within. His strongest
+will, to be lord of himself, gained for him "that
+heritage of woe." He confessed himself the bird's
+unhappy master, the stricken sufferer of this poem.
+But his was a full share of that dramatic temper
+which exults in the presage of its own doom. There
+is a delight in playing one's high part: we are all
+gladiators, crying <i>Ave Imperator!</i> To quote Burke's
+matter of fact: "In grief the pleasure is still uppermost,
+and the affliction we suffer has no resemblance
+to absolute pain, which is always odious, and which
+we endeavor to shake off as soon as possible." Poe
+went farther, and was an artist even in the tragedy
+of his career. If, according to his own belief, sadness
+and the vanishing of beauty are the highest
+poetic themes, and poetic feeling the keenest earthly
+pleasure, then the sorrow and darkness of his broken
+life were not without their frequent compensation.</p>
+<p>In the following pages, we have a fresh example
+of an artist's genius characterizing his interpretation
+of a famous poem. Gustave Doré, the last work
+of whose pencil is before us, was not the painter,
+or even the draughtsman, for realists demanding
+truth of tone, figure, and perfection. Such matters
+concerned him less than to make shape and distance,
+light and shade, assist his purpose,—which
+was to excite the soul, the imagination, of the looker
+on. This he did by arousing our sense of awe,
+through marvellous and often sublime conceptions
+of things unutterable and full of gloom or glory. It
+is well said that if his works were not great paintings,
+as pictures they are great indeed. As a "literary
+artist," and such he was, his force was in direct
+ratio with the dramatic invention of his author, with
+the brave audacities of the spirit that kindled his
+own. Hence his success with Rabelais, with "Le
+Juif-Errant," "Les Contes Drolatiques," and "Don
+Quixote," and hence, conversely, his failure to express
+the beauty of Tennyson's Idyls, of "Il Paradiso,"
+of the Hebrew pastorals, and other texts requiring
+exaltation, or sweetness and repose. He was a born
+master of the grotesque, and by a special insight
+could portray the spectres of a haunted brain. We
+see objects as his personages saw them, and with the
+very eyes of the Wandering Jew, the bewildered
+Don, or the goldsmith's daughter whose fancy so
+magnifies the King in the shop on the Pont-au-Change.
+It was in the nature of things that he
+should be attracted to each masterpiece of verse or
+prose that I have termed unique. The lower kingdoms
+were called into his service; his rocks, trees
+and mountains, the sky itself, are animate with motive
+and diablerie. Had he lived to illustrate Shakespeare,
+we should have seen a remarkable treatment
+of Caliban, the Witches, the storm in "Lear"; but
+doubtless should have questioned his ideals of Imogen
+or Miranda. Beauty pure and simple, and the perfect
+excellence thereof, he rarely seemed to comprehend.</p>
+<p>Yet there is beauty in his designs for the "Ancient
+Mariner," unreal as they are, and a consecutiveness
+rare in a series by Doré. The Rime
+afforded him a prolonged story, with many shiftings
+of the scene. In <i>The Raven</i> sound and color
+preserve their monotone and we have no change
+of place or occasion. What is the result? Doré
+proffers a series of variations upon the theme as
+he conceived it, "the enigma of death and the hallucination
+of an inconsolable soul." In some of these
+drawings his faults are evident; others reveal his
+powerful originality, and the best qualities in which,
+as a draughtsman, he stood alone. Plainly there
+was something in common between the working
+moods of Poe and Doré. This would appear more
+clearly had the latter tried his hand upon the "Tales
+of the Grotesque and Arabesque." Both resorted
+often to the elf-land of fantasy and romance. In
+melodramatic feats they both, through their command
+of the supernatural, avoided the danger-line between
+the ideal and the absurd. Poe was the truer worshipper
+of the Beautiful; his love for it was a consecrating
+passion, and herein he parts company with
+his illustrator. Poet or artist, Death at last transfigures
+all: within the shadow of his sable harbinger,
+Vedder's symbolic crayon aptly sets them face to
+face, but enfolds them with the mantle of immortal
+wisdom and power. An American woman has wrought
+the image of a star-eyed Genius with the final torch,
+the exquisite semblance of one whose vision beholds,
+but whose lips may not utter, the mysteries of a land
+beyond "the door of a legended tomb."</p>
+<p class="right"><span class="smcap">Edmund C. Stedman.</span></p>
+<hr style="width: 65%;"><p><span class="pagenum"><a id="Page_15">[15]</a></span></p>
+<h2><a id="THE_POEM"></a>THE POEM.</h2>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_16">[16]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_17">[17]</a></span></p>
+<p><a id="Illustration1"></a></p>
+<div class="figcenter" style="width: 556px;">
+<img alt="Illustration 1" height="800" src="images/i001.jpg" title="Illustration 1" width="556" id="img_images_i001.jpg">
+</div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_18">[18]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_19">[19]</a></span></p>
+<h2><a id="THE_RAVEN"></a>THE RAVEN.</h2>
+<div class="poem"><div class="stanza">
+<span class="i0">Once upon a midnight dreary, while I pondered, weak and weary,<br></span>
+<span class="i0">Over many a quaint and curious volume of forgotten lore,<br></span>
+<span class="i0">While I nodded, nearly napping, suddenly there came a tapping,<br></span>
+<span class="i0">As of some one gently rapping, rapping at my chamber door.<br></span>
+<span class="i0">"'T is some visiter," I muttered, "tapping at my chamber door—<br></span>
+<span class="i10">Only this, and nothing more."<br></span>
+</div><div class="stanza">
+<span class="i0">Ah, distinctly I remember it was in the bleak December,<br></span>
+<span class="i0">And each separate dying ember wrought its ghost upon the floor.<br></span>
+<span class="i0">Eagerly I wished the morrow:—vainly I had sought to borrow<br></span>
+<span class="i0">From my books surcease of sorrow—sorrow for the lost Lenore—<br></span>
+<span class="i0">For the rare and radiant maiden whom the angels name Lenore—<br></span>
+<span class="i10">Nameless here for evermore.<br></span>
+</div><div class="stanza">
+<span class="i0">And the silken sad uncertain rustling of each purple curtain<br></span>
+<span class="i0">Thrilled me—filled me with fantastic terrors never felt before;<br></span>
+<span class="i0">So that now, to still the beating of my heart, I stood repeating<br></span>
+<span class="i0">"'T is some visiter entreating entrance at my chamber door<br></span>
+<span class="i0">Some late visiter entreating entrance at my chamber door;—<br></span>
+<span class="i10">This it is, and nothing more."<br></span>
+</div><div class="stanza"><span class="pagenum"><a id="Page_20">[20]</a></span>
+<span class="i0">Presently my soul grew stronger; hesitating then no longer,<br></span>
+<span class="i0">"Sir," said I, "or Madam, truly your forgiveness I implore;<br></span>
+<span class="i0">But the fact is I was napping, and so gently you came rapping,<br></span>
+<span class="i0">And so faintly you came tapping, tapping at my chamber door,<br></span>
+<span class="i0">That I scarce was sure I heard you"—here I opened wide the door;—<br></span>
+<span class="i10">Darkness there, and nothing more.<br></span>
+</div><div class="stanza">
+<span class="i0">Deep into that darkness peering, long I stood there wondering, fearing,<br></span>
+<span class="i0">Doubting, dreaming dreams no mortal ever dared to dream before;<br></span>
+<span class="i0">But the silence was unbroken, and the darkness gave no token,<br></span>
+<span class="i0">And the only word there spoken was the whispered word, "Lenore!"<br></span>
+<span class="i0">This I whispered, and an echo murmured back the word, "Lenore!"<br></span>
+<span class="i10">Merely this and nothing more.<br></span>
+</div><div class="stanza">
+<span class="i0">Back into the chamber turning, all my soul within me burning,<br></span>
+<span class="i0">Soon again I heard a tapping, somewhat louder than before.<br></span>
+<span class="i0">"Surely," said I, "surely that is something at my window lattice;<br></span>
+<span class="i0">Let me see, then, what thereat is, and this mystery explore—<br></span>
+<span class="i0">Let my heart be still a moment and this mystery explore;—<br></span>
+<span class="i10">'T is the wind and nothing more!"<br></span>
+</div><div class="stanza">
+<span class="i0">Open here I flung the shutter, when, with many a flirt and flutter,<br></span>
+<span class="i0">In there stepped a stately Raven of the saintly days of yore.<br></span>
+<span class="i0">Not the least obeisance made he; not a minute stopped or stayed he;<br></span>
+<span class="i0">But, with mien of lord or lady, perched above my chamber door—<br></span>
+<span class="i0">Perched upon a bust of Pallas just above my chamber door—<br></span>
+<span class="i10">Perched, and sat, and nothing more.<br></span>
+</div><div class="stanza"><span class="pagenum"><a id="Page_21">[21]</a></span>
+<span class="i0">Then this ebony bird beguiling my sad fancy into smiling,<br></span>
+<span class="i0">By the grave and stern decorum of the countenance it wore,<br></span>
+<span class="i0">"Though thy crest be shorn and shaven, thou," I said, "art sure no craven,<br></span>
+<span class="i0">Ghastly grim and ancient Raven wandering from the Nightly shore,—<br></span>
+<span class="i0">Tell me what thy lordly name is on the Night's Plutonian shore!"<br></span>
+<span class="i10">Quoth the Raven, "Nevermore."<br></span>
+</div><div class="stanza">
+<span class="i0">Much I marvelled this ungainly fowl to hear discourse so plainly,<br></span>
+<span class="i0">Though its answer little meaning—little relevancy bore;<br></span>
+<span class="i0">For we cannot help agreeing that no living human being<br></span>
+<span class="i0">Ever yet was blessed with seeing bird above his chamber door—<br></span>
+<span class="i0">Bird or beast upon the sculptured bust above his chamber door,<br></span>
+<span class="i10">With such name as "Nevermore."<br></span>
+</div><div class="stanza">
+<span class="i0">But the Raven, sitting lonely on the placid bust, spoke only<br></span>
+<span class="i0">That one word, as if his soul in that one word he did outpour.<br></span>
+<span class="i0">Nothing further then he uttered—not a feather then he fluttered—<br></span>
+<span class="i0">Till I scarcely more than muttered, "Other friends have flown before—<br></span>
+<span class="i0">On the morrow <i>he</i> will leave me, as my hopes have flown before."<br></span>
+<span class="i10">Then the bird said, "Nevermore."<br></span>
+</div><div class="stanza">
+<span class="i0">Startled at the stillness broken by reply so aptly spoken,<br></span>
+<span class="i0">"Doubtless," said I, "what it utters is its only stock and store,<br></span>
+<span class="i0">Caught from some unhappy master whom unmerciful Disaster<br></span>
+<span class="i0">Followed fast and followed faster till his songs one burden bore—<br></span>
+<span class="i0">Till the dirges of his Hope that melancholy burden bore<br></span>
+<span class="i10">Of 'Never—nevermore.'"<br></span>
+</div><div class="stanza"><span class="pagenum"><a id="Page_22">[22]</a></span>
+<span class="i0">But the Raven still beguiling all my sad soul into smiling,<br></span>
+<span class="i0">Straight I wheeled a cushioned seat in front of bird and bust and door;<br></span>
+<span class="i0">Then, upon the velvet sinking, I betook myself to linking<br></span>
+<span class="i0">Fancy unto fancy, thinking what this ominous bird of yore—<br></span>
+<span class="i0">What this grim, ungainly, ghastly, gaunt and ominous bird of yore<br></span>
+<span class="i10">Meant in croaking "Nevermore."<br></span>
+</div><div class="stanza">
+<span class="i0">This I sat engaged in guessing, but no syllable expressing<br></span>
+<span class="i0">To the fowl whose fiery eyes now burned into my bosom's core;<br></span>
+<span class="i0">This and more I sat divining, with my head at ease reclining<br></span>
+<span class="i0">On the cushion's velvet lining that the lamplight gloated o'er,<br></span>
+<span class="i0">But whose velvet violet lining with the lamplight gloating o'er<br></span>
+<span class="i10"><i>She</i> shall press, ah, nevermore!<br></span>
+</div><div class="stanza">
+<span class="i0">Then, methought, the air grew denser, perfumed from an unseen censer<br></span>
+<span class="i0">Swung by seraphim whose foot-falls tinkled on the tufted floor.<br></span>
+<span class="i0">"Wretch," I cried, "thy God hath lent thee—by these angels he hath sent thee<br></span>
+<span class="i0">Respite—respite and nepenthe from thy memories of Lenore!<br></span>
+<span class="i0">Quaff, oh quaff this kind nepenthe, and forget this lost Lenore!"<br></span>
+<span class="i10">Quoth the Raven, "Nevermore."<br></span>
+</div><div class="stanza">
+<span class="i0">"Prophet!" said I, "thing of evil!—prophet still, if bird or devil!—<br></span>
+<span class="i0">Whether Tempter sent, or whether tempest tossed thee here ashore,<br></span>
+<span class="i0">Desolate yet all undaunted, on this desert land enchanted—<br></span>
+<span class="i0">On this home by Horror haunted—tell me truly, I implore—<br></span>
+<span class="i0">Is there—<i>is</i> there balm in Gilead?—tell me—tell me, I implore!"<br></span>
+<span class="i10">Quoth the Raven, "Nevermore."<br></span>
+</div><div class="stanza"><span class="pagenum"><a id="Page_23">[23]</a></span>
+<span class="i0">"Prophet!" said I, "thing of evil—prophet still, if bird or devil!<br></span>
+<span class="i0">By that Heaven that bends above, us—by that God we both adore—<br></span>
+<span class="i0">Tell this soul with sorrow laden if, within the distant Aidenn,<br></span>
+<span class="i0">It shall clasp a sainted maiden whom the angels name Lenore—<br></span>
+<span class="i0">Clasp a rare and radiant maiden whom the angels name Lenore."<br></span>
+<span class="i10">Quoth the Raven, "Nevermore."<br></span>
+</div><div class="stanza">
+<span class="i0">"Be that word our sign of parting, bird or fiend!" I shrieked, upstarting—<br></span>
+<span class="i0">"Get thee back into the tempest and the Night's Plutonian shore!<br></span>
+<span class="i0">Leave no black plume as a token of that lie thy soul hath spoken!<br></span>
+<span class="i0">Leave my loneliness unbroken!—quit the bust above my door!<br></span>
+<span class="i0">Take thy beak from out my heart, and take thy form from off my door!"<br></span>
+<span class="i10">Quoth the Raven, "Nevermore."<br></span>
+</div><div class="stanza">
+<span class="i0">And the Raven, never flitting, still is sitting, still is sitting<br></span>
+<span class="i0">On the pallid bust of Pallas just above my chamber door;<br></span>
+<span class="i0">And his eyes have all the seeming of a demon's that is dreaming,<br></span>
+<span class="i0">And the lamplight o'er him streaming throws his shadow on the floor;<br></span>
+<span class="i0">And my soul from out that shadow that lies floating on the floor<br></span>
+<span class="i10">Shall be lifted—nevermore!<br></span>
+</div></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_24">[24]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_25">[25]</a></span></p>
+<p><a id="Illustration2"></a></p>
+<div class="figcenter" style="width: 674px;">
+<img alt="Illustration 2" height="600" src="images/i002.jpg" title="Illustration 2" width="674" id="img_images_i002.jpg">
+</div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_26">[26]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_27">[27]</a></span></p>
+<p><a id="Illustration3"></a></p>
+<div class="figcenter" style="width: 556px;">
+<img alt="Illustration 3" height="800" src="images/i003.jpg" title="Illustration 3" width="556" id="img_images_i003.jpg">
+</div>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"Once upon a midnight dreary, while I pondered, weak and weary,<br>
+Over many a quaint and curious volume of forgotten lore."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_28">[28]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_29">[29]</a></span></p>
+<p><a id="Illustration4"></a></p>
+<div class="figcenter" style="width: 540px;">
+<img alt="Illustration 4" height="800" src="images/i004.jpg" title="Illustration 4" width="540" id="img_images_i004.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_30">[30]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_31">[31]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"Ah, distinctly I remember it was in the bleak December,<br>
+And each separate dying ember wrought its ghost upon the floor."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_32">[32]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_33">[33]</a></span></p>
+<p><a id="Illustration5"></a></p><div class="figcenter" style="width: 548px;">
+<img alt="Illustration 5" height="800" src="images/i005.jpg" title="Illustration 5" width="548" id="img_images_i005.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_34">[34]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_35">[35]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"Eagerly I wished the morrow;—vainly I had sought to borrow<br>
+From my books surcease of sorrow—sorrow for the lost Lenore."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_36">[36]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_37">[37]</a></span></p>
+<p><a id="Illustration6"></a></p><div class="figcenter" style="width: 569px;">
+<img alt="Illustration 6" height="800" src="images/i006.jpg" title="Illustration 6" width="569" id="img_images_i006.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_38">[38]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_39">[39]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"Sorrow for the lost Lenore."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_40">[40]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_41">[41]</a></span></p>
+<p><a id="Illustration7"></a></p><div class="figcenter" style="width: 547px;">
+<img alt="Illustration 7" height="800" src="images/i007.jpg" title="Illustration 7" width="547" id="img_images_i007.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_42">[42]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_43">[43]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"For the rare and radiant maiden whom the angels name Lenore—<br>
+<span class="indent">Nameless here for evermore."</span>
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_44">[44]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_45">[45]</a></span></p>
+<p><a id="Illustration8"></a></p><div class="figcenter" style="width: 531px;">
+<img alt="Illustration 8" height="800" src="images/i008.jpg" title="Illustration 8" width="531" id="img_images_i008.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_46">[46]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_47">[47]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"'T is some visiter entreating entrance at my chamber door—<br>
+Some late visiter entreating entrance at my chamber door."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_48">[48]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_49">[49]</a></span></p>
+<p><a id="Illustration9"></a></p><div class="figcenter" style="width: 526px;">
+<img alt="Illustration 9" height="800" src="images/i009.jpg" title="Illustration 9" width="526" id="img_images_i009.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_50">[50]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_51">[51]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"Here I opened wide the door;—<br>
+<span class="indent">Darkness there, and nothing more."</span>
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_52">[52]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_53">[53]</a></span></p>
+<p><a id="Illustration10"></a></p><div class="figcenter" style="width: 531px;">
+<img alt="Illustration 10" height="800" src="images/i010.jpg" title="Illustration 10" width="531" id="img_images_i010.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_54">[54]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_55">[55]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"Doubting, dreaming dreams no mortal ever dared to dream before."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_56">[56]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_57">[57]</a></span></p>
+<p><a id="Illustration11"></a></p><div class="figcenter" style="width: 560px;">
+<img alt="Illustration 11" height="800" src="images/i011.jpg" title="Illustration 11" width="560" id="img_images_i011.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_58">[58]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_59">[59]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"'Surely,' said I, 'surely that is something at my window lattice;<br>
+Let me see, then, what thereat is, and this mystery explore.'"
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_60">[60]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_61">[61]</a></span></p>
+<p><a id="Illustration12"></a></p><div class="figcenter" style="width: 531px;">
+<img alt="Illustration 12" height="800" src="images/i012.jpg" title="Illustration 12" width="531" id="img_images_i012.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_62">[62]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_63">[63]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"Open here I flung the shutter."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_64">[64]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_65">[65]</a></span></p>
+<p><a id="Illustration13"></a></p><div class="figcenter" style="width: 538px;">
+<img alt="Illustration 13" height="800" src="images/i013.jpg" title="Illustration 13" width="538" id="img_images_i013.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_66">[66]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_67">[67]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+. . . . . . . . "A stately Raven of the saintly days of yore.<br>
+Not the least obeisance made he; not a minute stopped or stayed he."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_68">[68]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_69">[69]</a></span></p>
+<p><a id="Illustration14"></a></p><div class="figcenter" style="width: 554px;">
+<img alt="Illustration 14" height="800" src="images/i014.jpg" title="Illustration 14" width="554" id="img_images_i014.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_70">[70]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_71">[71]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"Perched upon a bust of Pallas just above my chamber door—<br>
+<span class="indent">Perched, and sat, and nothing more."</span>
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_72">[72]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_73">[73]</a></span></p>
+<p><a id="Illustration15"></a></p><div class="figcenter" style="width: 533px;">
+<img alt="Illustration 15" height="800" src="images/i015.jpg" title="Illustration 15" width="533" id="img_images_i015.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_74">[74]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_75">[75]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"Wandering from the Nightly shore."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_76">[76]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_77">[77]</a></span></p>
+<p><a id="Illustration16"></a></p><div class="figcenter" style="width: 544px;">
+<img alt="Illustration 16" height="800" src="images/i016.jpg" title="Illustration 16" width="544" id="img_images_i016.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_78">[78]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_79">[79]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"Till I scarcely more than muttered, 'Other friends have flown before—<br>
+On the morrow <i>he</i> will leave me, as my hopes have flown before.'"
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_80">[80]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_81">[81]</a></span></p>
+<p><a id="Illustration17"></a></p><div class="figcenter" style="width: 540px;">
+<img alt="Illustration 17" height="800" src="images/i017.jpg" title="Illustration 17" width="540" id="img_images_i017.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_82">[82]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_83">[83]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"Then, upon the velvet sinking, I betook myself to linking<br>
+Fancy unto fancy."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_84">[84]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_85">[85]</a></span></p>
+<p><a id="Illustration18"></a></p><div class="figcenter" style="width: 564px;">
+<img alt="Illustration 18" height="800" src="images/i018.jpg" title="Illustration 18" width="564" id="img_images_i018.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_86">[86]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_87">[87]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"But whose velvet violet lining with the lamplight gloating o'er<br>
+<span class="indent"><i>She</i> shall press, ah, nevermore!"</span>
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_88">[88]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_89">[89]</a></span></p>
+<p><a id="Illustration19"></a></p><div class="figcenter" style="width: 555px;">
+<img alt="Illustration 19" height="800" src="images/i019.jpg" title="Illustration 19" width="555" id="img_images_i019.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_90">[90]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_91">[91]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"'Wretch,' I cried, 'thy God hath lent thee—by these angels he hath sent thee<br>
+Respite—respite and nepenthe from thy memories of Lenore!'"
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_92">[92]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_93">[93]</a></span></p>
+<p><a id="Illustration20"></a></p><div class="figcenter" style="width: 513px;">
+<img alt="Illustration 20" height="800" src="images/i020.jpg" title="Illustration 20" width="513" id="img_images_i020.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_94">[94]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_95">[95]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"On this home by Horror haunted."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_96">[96]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_97">[97]</a></span></p>
+<p><a id="Illustration21"></a></p><div class="figcenter" style="width: 538px;">
+<img alt="Illustration 21" height="800" src="images/i021.jpg" title="Illustration 21" width="538" id="img_images_i021.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_98">[98]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_99">[99]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+. . . . . . . . . "Tell me truly, I implore—<br>
+Is there—<i>is</i> there balm in Gilead?—tell me—tell me, I implore!"
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_100">[100]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_101">[101]</a></span></p>
+<p><a id="Illustration22"></a></p><div class="figcenter" style="width: 570px;">
+<img alt="Illustration 22" height="800" src="images/i022.jpg" title="Illustration 22" width="570" id="img_images_i022.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_102">[102]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_103">[103]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"Tell this soul with sorrow laden if, within the distant Aidenn,<br>
+It shall clasp a sainted maiden whom the angels name Lenore."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_104">[104]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_105">[105]</a></span></p>
+<p><a id="Illustration23"></a></p><div class="figcenter" style="width: 581px;">
+<img alt="Illustration 23" height="800" src="images/i023.jpg" title="Illustration 23" width="581" id="img_images_i023.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_106">[106]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_107">[107]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"'Be that word our sign of parting, bird or fiend!' I shrieked, upstarting."
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_108">[108]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_109">[109]</a></span></p>
+<p><a id="Illustration24"></a></p><div class="figcenter" style="width: 546px;">
+<img alt="Illustration 24" height="800" src="images/i024.jpg" title="Illustration 24" width="546" id="img_images_i024.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_110">[110]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_111">[111]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"'Get thee back into the tempest and the Night's Plutonian shore!'"
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_112">[112]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_113">[113]</a></span></p>
+<p><a id="Illustration25"></a></p><div class="figcenter" style="width: 526px;">
+<img alt="Illustration 25" height="800" src="images/i025.jpg" title="Illustration 25" width="526" id="img_images_i025.jpg">
+</div>
+<p><span class="pagenum"><a id="Page_114">[114]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_115">[115]</a></span></p>
+<div class="center">
+<table style="border-spacing: 0px;padding: 4px;border-width: 0px;" data-summary="Caption">
+<tbody><tr><td style="text-align: left;">
+"And my soul from out that shadow that lies floating on the floor<br>
+<span class="indent">Shall be lifted—nevermore!"</span>
+</td></tr>
+</tbody></table></div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_116">[116]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_117">[117]</a></span></p>
+<p><a id="Illustration26"></a></p><div class="figcenter" style="width: 600px;">
+<img alt="Illustration 26" height="608" src="images/i026.jpg" title="Illustration 26" width="600" id="img_images_i026.jpg">
+</div>
+<hr style="width: 65%;">
+<p><span class="pagenum"><a id="Page_118">[118]</a></span></p>
+<p><br></p>
+<p><span class="pagenum"><a id="Page_119">[119]</a></span></p>
+<pre></pre><section class="pg-boilerplate pgheader" id="pg-footer" lang="en">
+<div id="pg-end-separator">
+<span>*** END OF THE PROJECT GUTENBERG EBOOK THE RAVEN ***</span>
+</div>
+
+    
+<div>
+Updated editions will replace the previous one—the old editions will
+be renamed.
+</div><div>
+Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg™ electronic works to protect the PROJECT GUTENBERG™
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for an eBook, except by following
+the terms of the trademark license, including paying royalties for use
+of the Project Gutenberg trademark. If you do not charge anything for
+copies of this eBook, complying with the trademark license is very
+easy. You may use this eBook for nearly any purpose such as creation
+of derivative works, reports, performances and research. Project
+Gutenberg eBooks may be modified and printed and given away—you may
+do practically ANYTHING in the United States with eBooks not protected
+by U.S. copyright law. Redistribution is subject to the trademark
+license, especially commercial redistribution.
+</div>
+
+<div id="project-gutenberg-license">START: FULL LICENSE</div>
+
+<h2 id="pg-footer-heading">THE FULL PROJECT GUTENBERG LICENSE</h2>
+
+<div class="agate">PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+</div><div>
+To protect the Project Gutenberg™ mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase “Project
+Gutenberg”), you agree to comply with all the terms of the Full
+Project Gutenberg™ License available with this file or online at
+www.gutenberg.org/license.
+</div><div class="secthead">
+Section 1. General Terms of Use and Redistributing Project Gutenberg™
+electronic works
+</div><div>
+1.A. By reading or using any part of this Project Gutenberg™
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg™ electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg™ electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the person
+or entity to whom you paid the fee as set forth in paragraph 1.E.8.
+</div><div>
+1.B. “Project Gutenberg” is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg™ electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg™ electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg™
+electronic works. See paragraph 1.E below.
+</div><div>
+1.C. The Project Gutenberg Literary Archive Foundation (“the
+Foundation” or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg™ electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg™ mission of promoting
+free access to electronic works by freely sharing Project Gutenberg™
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg™ name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg™ License when
+you share it without charge with others.
+</div><div>
+1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg™ work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country other than the United States.
+</div><div>
+1.E. Unless you have removed all references to Project Gutenberg:
+</div><div>
+1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg™ License must appear
+prominently whenever any copy of a Project Gutenberg™ work (any work
+on which the phrase “Project Gutenberg” appears, or with which the
+phrase “Project Gutenberg” is associated) is accessed, displayed,
+performed, viewed, copied or distributed:
+</div><blockquote><div>
+    This eBook is for the use of anyone anywhere in the United States and most
+    other parts of the world at no cost and with almost no restrictions
+    whatsoever. You may copy it, give it away or re-use it under the terms
+    of the Project Gutenberg License included with this eBook or online
+    at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+    are not located in the United States, you will have to check the laws
+    of the country where you are located before using this eBook.
+  </div></blockquote><div>
+1.E.2. If an individual Project Gutenberg™ electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase “Project
+Gutenberg” associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg™
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+</div><div>
+1.E.3. If an individual Project Gutenberg™ electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg™ License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.
+</div><div>
+1.E.4. Do not unlink or detach or remove the full Project Gutenberg™
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg™.
+</div><div>
+1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg™ License.
+</div><div>
+1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg™ work in a format
+other than “Plain Vanilla ASCII” or other format used in the official
+version posted on the official Project Gutenberg™ website
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original “Plain
+Vanilla ASCII” or other form. Any alternate format must include the
+full Project Gutenberg™ License as specified in paragraph 1.E.1.
+</div><div>
+1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg™ works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+</div><div>
+1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg™ electronic works
+provided that:
+</div><ul>
+    <li>• You pay a royalty fee of 20% of the gross profits you derive from
+        the use of Project Gutenberg™ works calculated using the method
+        you already use to calculate your applicable taxes. The fee is owed
+        to the owner of the Project Gutenberg™ trademark, but he has
+        agreed to donate royalties under this paragraph to the Project
+        Gutenberg Literary Archive Foundation. Royalty payments must be paid
+        within 60 days following each date on which you prepare (or are
+        legally required to prepare) your periodic tax returns. Royalty
+        payments should be clearly marked as such and sent to the Project
+        Gutenberg Literary Archive Foundation at the address specified in
+        Section 4, “Information about donations to the Project Gutenberg
+        Literary Archive Foundation.”
+    </li>
+    <li>• You provide a full refund of any money paid by a user who notifies
+        you in writing (or by e-mail) within 30 days of receipt that s/he
+        does not agree to the terms of the full Project Gutenberg™
+        License. You must require such a user to return or destroy all
+        copies of the works possessed in a physical medium and discontinue
+        all use of and all access to other copies of Project Gutenberg™
+        works.
+    </li>
+    <li>• You provide, in accordance with paragraph 1.F.3, a full refund of
+        any money paid for a work or a replacement copy, if a defect in the
+        electronic work is discovered and reported to you within 90 days of
+        receipt of the work.
+    </li>
+    <li>• You comply with all other terms of this agreement for free
+        distribution of Project Gutenberg™ works.
+    </li>
+</ul><div>
+1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg™ electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from the Project Gutenberg Literary Archive Foundation, the manager of
+the Project Gutenberg™ trademark. Contact the Foundation as set
+forth in Section 3 below.
+</div><div>
+1.F.
+</div><div>
+1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg™ collection. Despite these efforts, Project Gutenberg™
+electronic works, and the medium on which they may be stored, may
+contain “Defects,” such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.
+</div><div>
+1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the “Right
+of Replacement or Refund” described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg™ trademark, and any other party distributing a Project
+Gutenberg™ electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+</div><div>
+1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.
+</div><div>
+1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you ‘AS-IS’, WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+</div><div>
+1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.
+</div><div>
+1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg™ electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg™
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg™ work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg™ work, and (c) any
+Defect you cause.
+</div><div class="secthead">
+Section 2. Information about the Mission of Project Gutenberg™
+</div><div>
+Project Gutenberg™ is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.
+</div><div>
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg™’s
+goals and ensuring that the Project Gutenberg™ collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg™ and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
+</div><div class="secthead">
+Section 3. Information about the Project Gutenberg Literary Archive Foundation
+</div><div>
+The Project Gutenberg Literary Archive Foundation is a non-profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation’s EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state’s laws.
+</div><div>
+The Foundation’s business office is located at 809 North 1500 West,
+Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
+to date contact information can be found at the Foundation’s website
+and official page at www.gutenberg.org/contact
+</div><div class="secthead">
+Section 4. Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+</div><div>
+Project Gutenberg™ depends upon and cannot survive without widespread
+public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine-readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+</div><div>
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular state
+visit <a href="https://www.gutenberg.org/donate/">www.gutenberg.org/donate</a>.
+</div><div>
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+</div><div>
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.
+</div><div>
+Please check the Project Gutenberg web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate.
+</div><div class="secthead">
+Section 5. General Information About Project Gutenberg™ electronic works
+</div><div>
+Professor Michael S. Hart was the originator of the Project
+Gutenberg™ concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg™ eBooks with only a loose network of
+volunteer support.
+</div><div>
+Project Gutenberg™ eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.
+</div><div>
+Most people start at our website which has the main PG search
+facility: <a href="https://www.gutenberg.org">www.gutenberg.org</a>.
+</div><div>
+This website includes information about Project Gutenberg™,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+</div>
+
+</section></body>
+</html>
