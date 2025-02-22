@@ -8,6 +8,12 @@ Using LLM agents and Elevenlabs product is being developed. The product provides
 
 # Data
 
+Currently the solution uses whatever Mistral was trained with. No additional fine tuning is made. 
+
 # Architecture
+
+The project is a conversation with and agent which is set to create creative stories according to the script.
+1. Conversation happens via the chat written with Flask.
+2. Agent responses according to the scrip. Proposing the user to make a descision.
 
 # Summary
