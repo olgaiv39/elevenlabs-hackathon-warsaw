@@ -14,6 +14,20 @@ class Core:
         self.narrator_api_id = os.environ["NARRATOR_API_ID"]
         
         self.client = Mistral(api_key=self.mistral_api_key)
+        self.initial_message = {"role": "user", "content": "Start a new story."}
+        
+    def start_conversation(self) -> list:
+        """
+        Starts a new conversation by sending an initial user message and returning the initial conversation history,
+        including the initial user message and the assistant's response.
+
+        Returns:
+            list: List containing the initial user message and the assistant's response.
+        """
+        self.logger.info("Starting new conversation")
+        initial_user_message = self.initial_message
+        assistant_response = self.get_assistant_response([initial_user_message])
+        return [initial_user_message, assistant_response]
 
     def get_assistant_response(self, messages: list) -> dict:
         """
