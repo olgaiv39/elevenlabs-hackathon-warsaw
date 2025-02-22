@@ -11,3 +11,8 @@ spacy==3.8.4
 ipykernel==6.29.5
 notebook==7.3.2
 jupyterlab-indent-guides==0.1.0
+python-dotenv==1.0.1
+ffmpeg==1.4.0
+flask==2.2.2
+requests==2.26.0
+flask-cors==3.0.10
