@@ -6,22 +6,48 @@ from elevenlabs import play
 import hashlib
 
 from core import Core
+import re
 
 CORE = Core()
 
 api_bp = Blueprint('api', __name__)
+cache = []
+
+def parse_text(text):
+    # Find and move chapter marker to beginning if present
+    chapter_match = re.search(r'\[CHAPTER_[^\]]*\]', text)
+    if chapter_match:
+        chapter = chapter_match.group(0)
+        text = re.sub(r'\[CHAPTER_[^\]]*\]', '', text)
+        chapter = chapter.replace("_", " ").replace("[", "").replace("]", "")
+        text = "**" + chapter + "**\n\n" + text.strip()
+
+    # Remove decisions
+    text = re.sub(r'\[DECISIONS_[^\]]*\]', '', text)
+
+    return text
+
+@api_bp.route('/get-image', methods=['POST'])
+def get_image():
+    global cache
+    return jsonify({'imagePath': "https://media.istockphoto.com/id/627795510/photo/example.jpg?s=612x612&w=0&k=20&c=lpUf5rjPVd6Kl_M6heqC8sUncR4FLmtsRzeYdTr5X_I="}), 200
 
 @api_bp.route('/start-story', methods=['POST'])
 def start_story():
+    global cache
     response = CORE.start_conversation()
-    return jsonify({'text': response[1]["content"]}), 200
+    cache = response
+    return jsonify({'text': parse_text(response[1]["content"])}), 200
 
 @api_bp.route('/generate-story', methods=['POST'])
 def generate_story():
+    global cache
     data = request.json
     text = data.get('text')
-    response = CORE.get_assistant_response([{"role": "user", "content": text}])
-    return jsonify({'text': response["content"]}), 200
+    cache.append({"role": "user", "content": text})
+    response = CORE.get_assistant_response(cache)
+    cache.append(response) 
+    return jsonify({'text': parse_text(response["content"])}), 200
 
 @api_bp.route('/tts', methods=['POST'])
 def generate_audio():
@@ -29,6 +55,7 @@ def generate_audio():
     text = data.get('text')
     if not text:
         return jsonify({'error': 'Text is required'}), 400
+    return jsonify({'error': 'Text is required'}), 200
 
     # Generate hash from text
     text_hash = hashlib.md5(text.encode()).hexdigest()
