@@ -1,15 +1,24 @@
 # elevenlabs-hackathon-warsaw
 
-The main goal of this project to extend boundaries of the story and provide user with unique experience. Meet firs narration extended story telling game.
+The primary goal of this project is to push the boundaries of interactive storytelling and offer users a truly unique experience. Introducing our first narration-extended storytelling game.
 
 # Objective
 
-Using LLM agents and Elevenlabs product is being developed. The product provides opportunity for the player to get into the story and alter that in any way possible without being attached to certain scripts. Game is guided by voice, interacts witht the user and asks which actions user want to perform. Based on actions taken the further plot gets adjusted.
+Using Large Language Model (LLM) agents in conjunction with the ElevenLabs platform, we are developing a dynamic, voice-guided storytelling experience. This approach enables players to immerse themselves in the narrative, make impactful decisions, and shape the story—free from rigid, predetermined scripts. Additionally, the application monitors inference speed, providing valuable data for model benchmarking.
 
 # Architecture
 
-The project is a conversation with and agent which is set to create creative stories according to the script.
-1. Conversation happens via the chat written with Flask.
-2. Agent responses according to the scrip. Proposing the user to make a descision.
+This project revolves around a conversational agent programmed to generate creative narratives based on a guiding script:
+
+1. Chat Interface: All interactions take place through a Flask-based chat interface.
+2. Decision-Making: The agent follows a core script but prompts the user to make decisions at critical points, thereby influencing the direction of the story.
+
+To create this project we were using:
+- Lovable for the front-end
+- Mistral as main narration agent
+- Elevenlabs for voice acting
+- Fal.ai (Flux model) for image generation
 
 # Summary
+
+Designed to run locally by default, this application can also be easily deployed to the cloud. By combining two generative models, it delivers a one-of-a-kind user experience while simultaneously allowing performance benchmarking of these models.
