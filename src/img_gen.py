@@ -10,8 +10,11 @@ from textblob import TextBlob
 nltk.download('punkt')
 
 class ImgGen:
-    def __init__(self, fal_key: str):
+    def __init__(self, fal_key: str, temp_folder: str = "temp_images"):
         self.fal_key = fal_key
+        # Use an absolute path for consistency.
+        self.temp_folder = os.path.abspath(temp_folder)
+        os.makedirs(self.temp_folder, exist_ok=True)
 
     def on_queue_update(self, update):
         """Print log messages while the fal_client job is in progress."""
