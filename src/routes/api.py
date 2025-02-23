@@ -30,7 +30,7 @@ def parse_text(text):
 @api_bp.route('/get-image', methods=['POST'])
 def get_image():
     global cache
-    return jsonify({'imagePath': "https://media.istockphoto.com/id/627795510/photo/example.jpg?s=612x612&w=0&k=20&c=lpUf5rjPVd6Kl_M6heqC8sUncR4FLmtsRzeYdTr5X_I="}), 200
+    return jsonify({'imagePath': "https://cdn.discordapp.com/attachments/1342844379450314832/1343152861042835486/image.png?ex=67bc3c14&is=67baea94&hm=210ebbe16e904d449a812cc5c93145bee8d07c87d6271ae8e678c52800c86f11&"}), 200
 
 @api_bp.route('/start-story', methods=['POST'])
 def start_story():
@@ -55,7 +55,6 @@ def generate_audio():
     text = data.get('text')
     if not text:
         return jsonify({'error': 'Text is required'}), 400
-    return jsonify({'error': 'Text is required'}), 200
 
     # Generate hash from text
     text_hash = hashlib.md5(text.encode()).hexdigest()
